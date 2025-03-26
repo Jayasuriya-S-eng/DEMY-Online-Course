@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Basics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #0288d1;
+            color: white;
+            padding: 1rem;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+            .content {
+                padding: 10px;
+            }
+        }
+        .topic{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Design Basics</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>What is Responsive Design?</h2>
+            <p>Responsive web design ensures that your website looks great and functions well on all devices, from desktops to smartphones.</p>
+        </section>
+        <section class="content">
+            <h2>Key Principles</h2>
+            <ul>
+                <li>Flexible Grid Layouts</li>
+                <li>Responsive Images</li>
+                <li>Media Queries</li>
+                <li>Mobile-First Design</li>
+            </ul>
+        </section>
+        <a class="topic" href="c.html">Back to Syllabus</a>
+    </main>
+</body>
+</html>

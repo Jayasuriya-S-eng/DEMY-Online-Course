@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements & Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p, ul {
+            text-align: left;
+        }
+        .example {
+            background: #eee;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+            font-family: monospace;
+        }
+        .topic-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .topic-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Elements & Attributes</h1>
+        
+        <h2>1. HTML Elements</h2>
+        <p>Elements are the building blocks of an HTML document. They consist of an opening tag, content, and a closing tag.</p>
+        <div class="example">
+            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+        </div>
+        
+        <h2>2. HTML Attributes</h2>
+        <p>Attributes provide additional information about an element. They are always inside the opening tag.</p>
+        <div class="example">
+            <code>&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;</code>
+        </div>
+        
+        <h2>Common Attributes</h2>
+        <ul>
+            <li><strong>href:</strong> Specifies the URL for a link (<code>&lt;a href="URL"&gt;</code>)</li>
+            <li><strong>src:</strong> Defines the source for images (<code>&lt;img src="image.jpg"&gt;</code>)</li>
+            <li><strong>alt:</strong> Provides alternative text for images</li>
+            <li><strong>id:</strong> Uniquely identifies an element</li>
+            <li><strong>class:</strong> Groups multiple elements for styling</li>
+        </ul>
+        
+        <h2>3. Forms and Input Elements</h2>
+        <p>Forms are used to collect user input. They consist of various input elements like text fields, checkboxes, radio buttons, and submit buttons.</p>
+        
+        <div class="example">
+            <code>
+                &lt;form action="submit-form.html" method="POST"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;<br>
+                &nbsp;&nbsp;&lt;br&gt;<br>
+                &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="email" id="email" name="email"&gt;<br>
+                &nbsp;&nbsp;&lt;br&gt;<br>
+                &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+                &lt;/form&gt;
+            </code>
+        </div>
+        
+        <h2>Common Input Types</h2>
+        <ul>
+            <li><strong>text:</strong> A single-line text field</li>
+            <li><strong>email:</strong> An input field for email addresses</li>
+            <li><strong>password:</strong> A field that hides the input</li>
+            <li><strong>radio:</strong> A radio button for selecting one option</li>
+            <li><strong>checkbox:</strong> A checkbox for selecting multiple options</li>
+            <li><strong>submit:</strong> A button to submit the form</li>
+        </ul>
+        
+        <a class="topic-btn" href="c.html">Back to Syllabus</a>
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .intro {
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction to HTML & CSS</h1>
+    <div class="container">
+        <img src="assests/h.jpg" alt="HTML">
+        <img src="assests/c.jpg" alt="CSS">
+    </div>
+    <div class="intro">
+        <p><strong>HTML (HyperText Markup Language)</strong> is the fundamental building block of the web. It is a markup language used to create and structure content on web pages. HTML elements, such as headings, paragraphs, links, lists, tables, and images, define how content is displayed in a browser. HTML forms the backbone of every webpage, allowing developers to organize information and create meaningful layouts.</p>
+        
+        <p>HTML consists of elements enclosed within tags, such as <code>&lt;h1&gt;</code> for headings and <code>&lt;p&gt;</code> for paragraphs. These tags help browsers interpret and display content correctly. Additionally, HTML supports embedding multimedia elements like videos, audios, and interactive forms to enhance user experience.</p>
+        
+        <p><strong>CSS (Cascading Style Sheets)</strong> is used to control the visual presentation of HTML content. While HTML provides the structure, CSS is responsible for styling and layout. With CSS, developers can define colors, fonts, spacing, alignment, and animations, ensuring that web pages look visually appealing and responsive across different devices.</p>
+        
+        <p>CSS operates through selectors and properties, allowing developers to target specific HTML elements and apply styles. There are three types of CSS: inline (written within HTML elements), internal (written in a <code>&lt;style&gt;</code> block within an HTML document), and external (linked through a separate CSS file). Modern CSS techniques include Flexbox and Grid Layout for creating complex designs with ease.</p>
+        
+        <p>By combining HTML and CSS, developers can create engaging, accessible, and well-structured web pages that deliver an optimal user experience. Whether building a simple personal blog or a complex web application, mastering HTML and CSS is essential for any web developer.</p>
+    </div>
+    <a href="c.html" class="button">Go to Syllabus</a>
+    <a href="a.html" class="button">Home</a>
+</body>
+</html>

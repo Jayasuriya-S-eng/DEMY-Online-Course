@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow (Loops and Conditionals)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Control Flow (Loops and Conditionals)</h1>
+        <p>Control flow in JavaScript determines the execution order of statements. It includes conditionals (if-else) and loops.</p>
+        
+        <h2>Conditional Statements</h2>
+        <p>Conditional statements allow a program to make decisions.</p>
+        <div class="code-box">
+            <pre>
+                let age = 18;
+                
+                if (age >= 18) {
+                    console.log("You are an adult.");
+                } else {
+                    console.log("You are a minor.");
+                }
+            </pre>
+        </div>
+        
+        <h2>Loops</h2>
+        <p>Loops are used to repeat actions multiple times.</p>
+        
+        <h3>For Loop</h3>
+        <div class="code-box">
+            <pre>
+                for (let i = 0; i < 5; i++) {
+                    console.log("Iteration: " + i);
+                }
+            </pre>
+        </div>
+        
+        <h3>While Loop</h3>
+        <div class="code-box">
+            <pre>
+                let count = 0;
+                while (count < 5) {
+                    console.log("Count: " + count);
+                    count++;
+                }
+            </pre>
+        </div>
+        
+        <h3>Do-While Loop</h3>
+        <div class="code-box">
+            <pre>
+                let num = 0;
+                do {
+                    console.log("Number: " + num);
+                    num++;
+                } while (num < 5);
+            </pre>
+        </div>
+        
+        <p>Understanding control flow is essential for writing efficient and logical programs in JavaScript.</p>
+        
+        <a class="back-btn" href="e.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

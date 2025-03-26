@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DOM Manipulation</h1>
+        <p>The Document Object Model (DOM) allows JavaScript to interact with and modify HTML and CSS dynamically.</p>
+        
+        <h2>Selecting Elements</h2>
+        <p>We can select elements using different methods.</p>
+        <div class="code-box">
+            <pre>
+                // Selecting by ID
+                let element = document.getElementById("myElement");
+                
+                // Selecting by Class
+                let elements = document.getElementsByClassName("myClass");
+                
+                // Query Selector
+                let firstElement = document.querySelector(".myClass");
+            </pre>
+        </div>
+        
+        <h2>Modifying Elements</h2>
+        <p>We can change text, styles, and attributes.</p>
+        <div class="code-box">
+            <pre>
+                let element = document.getElementById("myElement");
+                element.innerText = "New Text";
+                element.style.color = "blue";
+            </pre>
+        </div>
+        
+        <h2>Event Listeners</h2>
+        <p>Events allow interaction with elements.</p>
+        <div class="code-box">
+            <pre>
+                let btn = document.getElementById("myButton");
+                btn.addEventListener("click", function() {
+                    alert("Button Clicked!");
+                });
+            </pre>
+        </div>
+        
+        <p>Mastering DOM manipulation is crucial for dynamic web applications.</p>
+        
+        <a class="back-btn" href="e.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

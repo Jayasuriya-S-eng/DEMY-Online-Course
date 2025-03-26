@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+        .btn:hover {
+            background: #026aa7;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Handling</h1>
+        <p>Event handling allows JavaScript to execute code in response to user actions such as clicks, keypresses, and mouse movements.</p>
+        
+        <h2>Adding Event Listeners</h2>
+        <p>We can attach event listeners to elements to handle events.</p>
+        <div class="code-box">
+            <pre>
+                document.getElementById("myButton").addEventListener("click", function() {
+                    alert("Button Clicked!");
+                });
+            </pre>
+        </div>
+        
+        <h2>Common Event Types</h2>
+        <ul>
+            <li><strong>click</strong> - Triggered when an element is clicked.</li>
+            <li><strong>mouseover</strong> - Triggered when the mouse hovers over an element.</li>
+            <li><strong>keydown</strong> - Triggered when a key is pressed.</li>
+        </ul>
+        
+        <h2>Example: Changing Text on Click</h2>
+        <p>Click the button below to change the text.</p>
+        <button class="btn" id="changeTextBtn">Click Me</button>
+        <p id="text">Original Text</p>
+        <script>
+            document.getElementById("changeTextBtn").addEventListener("click", function() {
+                document.getElementById("text").innerText = "Text Changed!";
+            });
+        </script>
+        
+        <p>Event handling is essential for interactive web pages.</p>
+        
+        <a class="back-btn" href="e.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

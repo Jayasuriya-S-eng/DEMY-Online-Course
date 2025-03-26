@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMY - Icon Page</title>
+
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #0288d1, #26c6da);
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+        }
+        .icon-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            flex-direction: column;
+        }
+        .icon-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+        .icon-box i {
+            font-size: 100px;
+            color: #0288d1;
+        }
+        .app-name {
+            position: absolute;
+            bottom: -40px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0288d1;
+            font-family: 'Poppins', sans-serif;
+        }
+        .icon-box b {
+            font-size: 48px;
+            font-family: 'Poppins', sans-serif;
+            color: #0288d1;
+            text-decoration: none;
+        }
+        a {
+            text-decoration: none;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-box">
+        <a href="a.html">
+            <b>DEMY</b>
+            <i class="fas fa-graduation-cap"></i>
+        </a>
+    </div>
+</body>
+</html>

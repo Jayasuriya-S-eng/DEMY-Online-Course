@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+    <style>
+     
+        
+        body {
+            text-align: center;
+            margin: 0;
+            background: url('assests/img2.jpg') no-repeat center center/cover;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 55vh;
+        }
+        .courses {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            justify-content: center;
+            width: 320px;
+            top: 500px;
+        }
+        .course-btn {
+            background: #0288d1;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .course-btn:hover {
+            background: #01579b;
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .course-btn i {
+            margin-right: 10px;
+        }
+        .button{
+            color: #0288d1;
+        }
+    </style>
+</head>
+<body>
+    <div class="courses">
+        <h1>Available Courses</h1>
+        <a href="hc.html" class="course-btn"><i class="fas fa-code"></i> HTML & CSS</a>
+        <a href="j.html" class="course-btn"><i class="fab fa-js"></i> JavaScript</a>
+        <a href="p.html" class="course-btn"><i class="fab fa-python"></i> Python</a>
+        <a href="a.html" class="button">HOME</a>
+    </div>
+</body>
+</html>

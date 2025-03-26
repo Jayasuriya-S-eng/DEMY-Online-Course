@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: #0288d1;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h2 {
+            color: #0288d1;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #0277bd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Introduction to HTML</div>
+    <div class="content">
+        <h2>What is HTML?</h2>
+        <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It describes the structure of a webpage using elements such as headings, paragraphs, links, images, and more.</p>
+
+        <h2>Basic HTML Structure</h2>
+        <p>An HTML document typically follows this structure:</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <h2>Key HTML Elements</h2>
+        <ul>
+            <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Headings</li>
+            <li><strong>&lt;p&gt;</strong> - Paragraph</li>
+            <li><strong>&lt;a href="URL"&gt;</strong> - Hyperlinks</li>
+            <li><strong>&lt;img src="image.jpg" alt="text"&gt;</strong> - Images</li>
+            <li><strong>&lt;ul&gt; &amp; &lt;ol&gt;</strong> - Lists</li>
+        </ul>
+
+        <a class="back-btn" href="c.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

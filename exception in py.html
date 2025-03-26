@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        ul {
+            text-align: left;
+            color: #555;
+            font-size: 18px;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exception Handling</h1>
+        <p>Exception handling in Python allows programs to handle runtime errors gracefully and prevent unexpected crashes.</p>
+        
+        <h2>What is an Exception?</h2>
+        <p>An exception is an error that occurs during the execution of a program. Examples include division by zero, file not found, or accessing an undefined variable.</p>
+        
+        <h2>Using try-except Blocks</h2>
+        <p>The <code>try</code> block lets you test code for errors, while the <code>except</code> block handles the error.</p>
+        <div class="code-box">
+            try:
+                x = 10 / 0  # Division by zero
+            except ZeroDivisionError:
+                print("Cannot divide by zero!")
+        </div>
+        
+        <h2>Using finally</h2>
+        <p>The <code>finally</code> block executes code regardless of whether an exception occurs.</p>
+        <div class="code-box">
+            try:
+                file = open("example.txt", "r")
+            except FileNotFoundError:
+                print("File not found!")
+            finally:
+                print("Execution complete.")
+        </div>
+        
+        <h2>Raising Exceptions</h2>
+        <p>You can raise exceptions using the <code>raise</code> keyword.</p>
+        <div class="code-box">
+            age = -5
+            if age < 0:
+                raise ValueError("Age cannot be negative!")
+        </div>
+        
+        <p>Exception handling improves program reliability and prevents unexpected crashes.</p>
+        <a class="back-btn" href="d.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

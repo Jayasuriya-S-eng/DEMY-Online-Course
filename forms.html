@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: #0288d1;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h2 {
+            color: #0288d1;
+        }
+        .example {
+            background: #e3f2fd;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #0288d1;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Forms and Input Elements</div>
+    <div class="content">
+        <h2>What are Forms?</h2>
+        <p>Forms in HTML are used to collect user input. They contain various input elements like text fields, checkboxes, radio buttons, and submit buttons.</p>
+        
+        <h2>Common Input Elements</h2>
+        <ul>
+            <li><strong>Text Input:</strong> Used to enter text.</li>
+            <li><strong>Password Input:</strong> Hides the text entered.</li>
+            <li><strong>Email Input:</strong> Validates email addresses.</li>
+            <li><strong>Radio Buttons:</strong> Select one option from multiple choices.</li>
+            <li><strong>Checkboxes:</strong> Select multiple options.</li>
+            <li><strong>Dropdown (Select):</strong> Choose one option from a list.</li>
+            <li><strong>Textarea:</strong> Enter multiple lines of text.</li>
+            <li><strong>Submit Button:</strong> Sends form data.</li>
+        </ul>
+        
+        <h2>Basic Form Example</h2>
+        <div class="example">
+            <code>
+                &lt;form action="#" method="post"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="name" name="name" required&gt;<br><br>
+                &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="email" id="email" name="email" required&gt;<br><br>
+                &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                &lt;/form&gt;
+            </code>
+        </div>
+        <a class="topic" href="c.html">Back to Syllabus</a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Asynchronous JavaScript</h1>
+        <p>Asynchronous JavaScript allows code execution to continue while waiting for an operation to complete, preventing blocking behavior. This is useful for tasks like fetching data from APIs.</p>
+        
+        <h2>Using Promises</h2>
+        <p>Promises are used to handle asynchronous operations. They can be in one of three states: pending, resolved, or rejected.</p>
+        <div class="code-box">
+            let promise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve("Data loaded"), 2000);
+            });
+            
+            promise.then(data => console.log(data));
+        </div>
+        
+        <h2>Async/Await</h2>
+        <p>Async functions allow you to write promise-based code in a more readable way using the <code>await</code> keyword.</p>
+        <div class="code-box">
+            async function fetchData() {
+                let response = await fetch("https://api.example.com/data");
+                let data = await response.json();
+                console.log(data);
+            }
+            
+            fetchData();
+        </div>
+        
+        <a class="back-btn" href="e.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

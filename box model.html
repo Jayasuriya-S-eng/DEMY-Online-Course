@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model & Positioning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #000;
+        }
+        header {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #1e90ff;
+        }
+        ul {
+            list-style-type: square;
+        }
+        .box-example {
+            width: 200px;
+            height: 100px;
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 3px solid #00008b;
+        }
+        .position-example {
+            width: 200px;
+            height: 100px;
+            background-color: #00008b;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1e90ff;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Box Model & Positioning</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Understanding the Box Model</h2>
+            <p>The CSS box model is a fundamental concept in web development that dictates how elements are displayed and spaced. It consists of four main parts:</p>
+            <ul>
+                <li><strong>Content:</strong> The actual text or images within the element.</li>
+                <li><strong>Padding:</strong> The space between the content and the border.</li>
+                <li><strong>Border:</strong> The edge surrounding the padding (or content if no padding is present).</li>
+                <li><strong>Margin:</strong> The space between this element and neighboring elements.</li>
+            </ul>
+            <div class="box-example">
+                <p>Example Box</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>CSS Positioning</h2>
+            <p>CSS provides several positioning methods to control the layout of elements:</p>
+            <ul>
+                <li><strong>Static:</strong> The default position of elements.</li>
+                <li><strong>Relative:</strong> Moves an element relative to its normal position.</li>
+                <li><strong>Absolute:</strong> Positions an element relative to its nearest positioned ancestor.</li>
+                <li><strong>Fixed:</strong> Keeps an element in place relative to the viewport.</li>
+                <li><strong>Sticky:</strong> Switches between relative and fixed based on scroll position.</li>
+            </ul>
+            <div class="position-example">
+                <p>Positioned Box</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="c.html">Back to Home</a>
+    </footer>
+</body>
+</html>

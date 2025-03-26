@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with APIs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Working with APIs</h1>
+        <p>APIs (Application Programming Interfaces) allow communication between different software applications. JavaScript can be used to fetch data from APIs and dynamically update web pages.</p>
+        
+        <h2>Using Fetch API</h2>
+        <p>The Fetch API provides a simple way to make HTTP requests.</p>
+        <div class="code-box">
+            fetch("https://api.example.com/data")
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error("Error:", error));
+        </div>
+        
+        <h2>Using Async/Await with Fetch</h2>
+        <p>Async/Await makes working with APIs more readable and manageable.</p>
+        <div class="code-box">
+            async function getData() {
+                try {
+                    let response = await fetch("https://api.example.com/data");
+                    let data = await response.json();
+                    console.log(data);
+                } catch (error) {
+                    console.error("Error:", error);
+                }
+            }
+            getData();
+        </div>
+        
+        <a class="back-btn" href="e.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

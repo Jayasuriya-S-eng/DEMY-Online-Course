@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements & Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        p, ul {
+            text-align: left;
+        }
+        .example {
+            background: #e0f0ff;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+            font-family: monospace;
+        }
+        .topic-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .topic-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Elements & Attributes</h1>
+        
+        <h2>Introduction to CSS</h2>
+        <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It allows you to change colors, fonts, spacing, and more.</p>
+        
+        <h2>Types of CSS</h2>
+        <ul>
+            <li><strong>Inline CSS:</strong> Styles applied directly to an element using the <code>style</code> attribute.</li>
+            <li><strong>Internal CSS:</strong> Styles defined within a <code>&lt;style&gt;</code> tag inside the HTML document.</li>
+            <li><strong>External CSS:</strong> Styles written in a separate file and linked using the <code>&lt;link&gt;</code> tag.</li>
+        </ul>
+        
+        <div class="example">
+            <code>
+                &lt;style&gt;<br>
+                body { background-color: lightblue; }<br>
+                h1 { color: darkblue; }<br>
+                &lt;/style&gt;
+            </code>
+        </div>
+        
+        <h2>CSS Selectors</h2>
+        <p>Selectors are used to target HTML elements to apply styles.</p>
+        <ul>
+            <li><strong>Element Selector:</strong> Targets an HTML element (e.g., <code>p { color: blue; }</code>).</li>
+            <li><strong>Class Selector:</strong> Targets elements with a specific class (<code>.class-name { }</code>).</li>
+            <li><strong>ID Selector:</strong> Targets a single element with a specific ID (<code>#id-name { }</code>).</li>
+        </ul>
+        
+        <a class="topic-btn" href="c.html">Back to Syllabus</a>
+        
+    </div>
+</body>
+</html>

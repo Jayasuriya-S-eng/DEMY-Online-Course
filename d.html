@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Simple Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6b81;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #0288d1;
+        }
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .button-list a {
+            display: block;
+            padding: 10px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .button-list a:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python Course Syllabus</h1>
+        <p>Welcome! This is a beautifully designed web page created using HTML and CSS.</p>
+        <div class="button-list">
+            <a href="intro python.html">Introduction to Python</a>
+            <a href="variables in py.html">Variables and Data Types</a>
+            <a href="loops.py">Control Flow (Loops and Conditionals)</a>
+            <a href="f in py.html">Functions and Modules</a>
+            <a href="oops.html">Object-Oriented Programming</a>
+           
+            <a href="exception in py.html">Exception Handling</a>
+           
+            <a href="py project.html">Building a Python Project</a>
+            
+        </div>
+        <a href="b.html" class="button">COURSES</a>
+    </div>
+</body>
+</html>

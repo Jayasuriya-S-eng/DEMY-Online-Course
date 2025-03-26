@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions and Scope</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Functions and Scope</h1>
+        <p>Functions in JavaScript are blocks of reusable code that perform specific tasks. They help in organizing and structuring the code efficiently.</p>
+        
+        <h2>Defining a Function</h2>
+        <p>Functions can be declared using the <code>function</code> keyword or using arrow function syntax.</p>
+        <div class="code-box">
+            <pre>
+                function greet(name) {
+                    return "Hello, " + name + "!";
+                }
+                
+                console.log(greet("Alice"));
+            </pre>
+        </div>
+        
+        <h2>Arrow Functions</h2>
+        <p>Arrow functions provide a shorter syntax for defining functions.</p>
+        <div class="code-box">
+            <pre>
+                const greet = (name) => `Hello, ${name}!`;
+                console.log(greet("Bob"));
+            </pre>
+        </div>
+        
+        <h2>Function Scope</h2>
+        <p>Scope determines the visibility and accessibility of variables.</p>
+        <ul>
+            <li><strong>Global Scope:</strong> Variables declared outside any function are accessible everywhere.</li>
+            <li><strong>Local Scope:</strong> Variables declared inside a function are accessible only within that function.</li>
+            <li><strong>Block Scope:</strong> Variables declared with <code>let</code> or <code>const</code> inside a block are limited to that block.</li>
+        </ul>
+        
+        <h2>Example of Scope</h2>
+        <div class="code-box">
+            <pre>
+                let globalVar = "I'm global";
+                
+                function exampleFunction() {
+                    let localVar = "I'm local";
+                    console.log(globalVar); // Accessible
+                    console.log(localVar); // Accessible
+                }
+                
+                exampleFunction();
+                console.log(localVar); // Error: localVar is not defined
+            </pre>
+        </div>
+        
+        <p>Understanding functions and scope is crucial for writing structured and efficient JavaScript code.</p>
+        
+        <a class="back-btn" href="e.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

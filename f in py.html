@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions and Modules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        ul {
+            text-align: left;
+            color: #555;
+            font-size: 18px;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Functions and Modules</h1>
+        <p>Functions in Python allow code reuse and modularity by encapsulating reusable code blocks.</p>
+        
+        <h2>Defining a Function</h2>
+        <p>A function is defined using the <strong>def</strong> keyword.</p>
+        <div class="code-box">
+            def greet(name):
+                return "Hello, " + name
+
+            print(greet("Alice"))
+        </div>
+
+        <h2>Modules</h2>
+        <p>Modules allow you to organize Python code into separate files and reuse them.</p>
+        <div class="code-box">
+            # mymodule.py
+            def add(a, b):
+                return a + b
+
+            # main.py
+            import mymodule
+            print(mymodule.add(5, 3))
+        </div>
+        
+        <p>Using functions and modules improves code structure, readability, and maintainability.</p>
+        <a class="back-btn" href="d.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Data Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Variables and Data Types</h1>
+        <p>Variables in JavaScript are used to store data values. JavaScript provides different types of variables that define the kind of data that can be stored.</p>
+        
+        <h2>Variable Declarations</h2>
+        <ul>
+            <li><strong>var:</strong> The old way to declare variables, has function scope.</li>
+            <li><strong>let:</strong> A modern way to declare variables, has block scope.</li>
+            <li><strong>const:</strong> Used for constant values that cannot be reassigned.</li>
+        </ul>
+        
+        <h2>Example of Variable Declaration</h2>
+        <div class="code-box">
+            <pre>
+                var name = "John";
+                let age = 25;
+                const PI = 3.14;
+            </pre>
+        </div>
+        
+        <h2>Data Types in JavaScript</h2>
+        <ul>
+            <li><strong>String:</strong> Represents text, enclosed in quotes ("hello").</li>
+            <li><strong>Number:</strong> Represents numeric values (42, 3.14).</li>
+            <li><strong>Boolean:</strong> Represents true or false values.</li>
+            <li><strong>Array:</strong> A collection of values stored in a list.</li>
+            <li><strong>Object:</strong> A collection of key-value pairs.</li>
+            <li><strong>Null:</strong> Represents an empty value.</li>
+            <li><strong>Undefined:</strong> A variable that has been declared but not assigned a value.</li>
+        </ul>
+        
+        <h2>Example of Data Types</h2>
+        <div class="code-box">
+            <pre>
+                let text = "Hello"; // String
+                let number = 100; // Number
+                let isTrue = true; // Boolean
+                let colors = ["red", "green", "blue"]; // Array
+                let person = {name: "Alice", age: 30}; // Object
+                let emptyValue = null; // Null
+                let notAssigned; // Undefined
+            </pre>
+        </div>
+        
+        <p>Understanding variables and data types is crucial for working with JavaScript effectively.</p>
+        
+        <a class="back-btn" href="e.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

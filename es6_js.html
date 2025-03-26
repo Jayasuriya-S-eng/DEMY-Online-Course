@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6+ Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ES6+ Features</h1>
+        <p>ECMAScript 6 (ES6) and later versions introduced powerful features to improve JavaScript development.</p>
+        
+        <h2>1. let and const</h2>
+        <p>ES6 introduced <code>let</code> and <code>const</code> for variable declaration, replacing <code>var</code>.</p>
+        <div class="code-box">
+            <pre>
+                let name = "John";
+                const age = 30;
+            </pre>
+        </div>
+        
+        <h2>2. Arrow Functions</h2>
+        <p>Simplified function syntax with <code>=></code>.</p>
+        <div class="code-box">
+            <pre>
+                const add = (a, b) => a + b;
+                console.log(add(5, 3)); // Output: 8
+            </pre>
+        </div>
+        
+        <h2>3. Template Literals</h2>
+        <p>Allows embedding expressions in strings.</p>
+        <div class="code-box">
+            <pre>
+                let name = "Alice";
+                console.log(`Hello, ${name}!`); 
+            </pre>
+        </div>
+        
+        <h2>4. Destructuring</h2>
+        <p>Extract values from arrays or objects easily.</p>
+        <div class="code-box">
+            <pre>
+                const person = { name: "John", age: 30 };
+                const { name, age } = person;
+                console.log(name, age);
+            </pre>
+        </div>
+        
+        <h2>5. Spread and Rest Operators</h2>
+        <p>Used for expanding or collecting elements.</p>
+        <div class="code-box">
+            <pre>
+                const numbers = [1, 2, 3];
+                const newNumbers = [...numbers, 4, 5];
+                console.log(newNumbers);
+            </pre>
+        </div>
+        
+        <h2>6. Promises</h2>
+        <p>Handle asynchronous operations.</p>
+        <div class="code-box">
+            <pre>
+                const fetchData = new Promise((resolve, reject) => {
+                    setTimeout(() => resolve("Data loaded"), 2000);
+                });
+                fetchData.then(data => console.log(data));
+            </pre>
+        </div>
+        
+        <p>ES6+ introduced many more features such as classes, modules, and async/await, making JavaScript more powerful.</p>
+        
+        <a class="back-btn" href="e.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Python Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        ul {
+            text-align: left;
+            color: #555;
+            font-size: 18px;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Building a Python Project</h1>
+        <p>Building a Python project involves planning, designing, and implementing a structured program that solves a problem or automates a task.</p>
+        
+        <h2>Steps to Build a Python Project</h2>
+        <ul>
+            <li><strong>Define the Objective:</strong> Decide what problem the project will solve.</li>
+            <li><strong>Plan the Features:</strong> Outline key functionalities and structure.</li>
+            <li><strong>Set Up the Environment:</strong> Install necessary libraries and tools.</li>
+            <li><strong>Write the Code:</strong> Implement the features step by step.</li>
+            <li><strong>Test the Application:</strong> Debug and optimize performance.</li>
+            <li><strong>Deploy and Share:</strong> Host your project on GitHub or a cloud platform.</li>
+        </ul>
+        
+        <h2>Example: To-Do List Application</h2>
+        <p>A simple project idea is a to-do list app where users can add, remove, and view tasks.</p>
+        <div class="code-box">
+            tasks = []
+            
+            def add_task(task):
+                tasks.append(task)
+                print("Task added!")
+            
+            def view_tasks():
+                for idx, task in enumerate(tasks, start=1):
+                    print(f"{idx}. {task}")
+            
+            add_task("Complete Python project")
+            add_task("Review code")
+            view_tasks()
+        </div>
+        
+        <p>Building projects enhances coding skills and helps apply theoretical knowledge in real-world scenarios.</p>
+        <a class="back-btn" href="d.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>

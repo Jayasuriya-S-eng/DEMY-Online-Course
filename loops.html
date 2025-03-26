@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Oriented Programming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            background: #0288d1;
+            color: white;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        ul {
+            text-align: left;
+            color: #555;
+            font-size: 18px;
+        }
+        .code-box {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0288d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #026aa7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Object-Oriented Programming</h1>
+        <p>Object-Oriented Programming (OOP) is a programming paradigm that organizes software design around data, or objects, rather than functions and logic. It is widely used in modern programming to build scalable and maintainable applications.</p>
+        
+        <h2>Key Concepts of OOP</h2>
+        <ul>
+            <li><strong>Class:</strong> A blueprint for creating objects. It defines attributes (data) and methods (functions) for objects.</li>
+            <li><strong>Object:</strong> An instance of a class that contains real data.</li>
+            <li><strong>Encapsulation:</strong> Bundling data and methods together to prevent direct modification from outside the class.</li>
+            <li><strong>Inheritance:</strong> Allows one class to inherit attributes and methods from another class, promoting code reuse.</li>
+            <li><strong>Polymorphism:</strong> Enables different classes to use the same method name but execute different behaviors.</li>
+            <li><strong>Abstraction:</strong> Hides complex implementation details and only shows the necessary features of an object.</li>
+        </ul>
+        
+        <h2>Example of a Class and Object</h2>
+        <p>The following example demonstrates how a class is defined and instantiated in Python.</p>
+        <div class="code-box">
+            class Car:
+                def __init__(self, brand, model, year):
+                    self.brand = brand
+                    self.model = model
+                    self.year = year
+                
+                def display_info(self):
+                    return f"{self.year} {self.brand} {self.model}"
+            
+            my_car = Car("Toyota", "Corolla", 2022)
+            print(my_car.display_info())
+        </div>
+        
+        <h2>Example of Inheritance</h2>
+        <p>Inheritance allows a class to derive properties and methods from another class, reducing redundancy.</p>
+        <div class="code-box">
+            class Vehicle:
+                def __init__(self, brand):
+                    self.brand = brand
+                
+                def honk(self):
+                    return "Beep! Beep!"
+            
+            class Car(Vehicle):
+                def __init__(self, brand, model):
+                    super().__init__(brand)
+                    self.model = model
+                
+                def display_info(self):
+                    return f"Car: {self.brand} {self.model}"
+            
+            my_car = Car("Honda", "Civic")
+            print(my_car.display_info())
+            print(my_car.honk())
+        </div>
+        
+        <h2>Benefits of OOP</h2>
+        <ul>
+            <li><strong>Modularity:</strong> Code is organized into objects, making it easier to manage and maintain.</li>
+            <li><strong>Code Reusability:</strong> Inheritance allows the reuse of existing code without rewriting it.</li>
+            <li><strong>Scalability:</strong> OOP helps manage complex applications by breaking them into smaller, manageable pieces.</li>
+            <li><strong>Security:</strong> Encapsulation restricts direct access to sensitive data.</li>
+        </ul>
+        
+        <p>OOP is a fundamental paradigm in Python that improves code organization and efficiency. Mastering OOP principles will help in developing large-scale applications effectively.</p>
+        <a class="back-btn" href="d.html">Back to Syllabus</a>
+    </div>
+</body>
+</html>
